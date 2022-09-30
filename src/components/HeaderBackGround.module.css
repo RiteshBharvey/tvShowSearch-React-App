@@ -1,0 +1,40 @@
+.our-story-card-background {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: -70px;
+    z-index: 0;
+  }
+  .concord-img-wrapper {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .concord-img {
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .concord-img-gradient {
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0,
+      transparent 60%,
+      rgba(0, 0, 0, 0.8)
+    );
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  

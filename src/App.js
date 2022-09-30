@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Cards from "./components/Cards";
+import Header from "./components/Header";
+import HeaderBackGround from "./components/HeaderBackGround";
+import HeaderText from "./components/HeaderText";
+import HeaderCardContainer from "./components/UI/HeaderCardContainer";
+import HeaderContainer from "./components/UI/HeaderContainer";
 
 function App() {
+const [cardData, setCardData]=useState([]);  
+function searchHandler(data){
+  setCardData(data);
+}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderContainer>
+        <Header />
+        <HeaderCardContainer>
+          <HeaderBackGround />
+          <HeaderText onSearch={searchHandler}/>
+        </HeaderCardContainer>
+      </HeaderContainer>
+      <Cards data={cardData}/>
+    </>
   );
 }
 

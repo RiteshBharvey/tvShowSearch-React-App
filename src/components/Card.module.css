@@ -1,0 +1,51 @@
+.card {
+    flex-grow: 1;
+    width: 244px;
+    list-style: none;
+  }
+  .image {
+    width: 244px;
+    height: 340px;
+    object-fit: fill;
+    box-shadow: rgba(143, 143, 143, 0.432) 0px 5px 15px;
+    border-radius: 5px;
+  }
+  .cardContent {
+    height: 210px;
+    width: 244px;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    background-color: #222;
+    color: #f3f3f3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fa-star {
+    color: yellow;
+  }
+  .cardText {
+    padding-top: 7px;
+    overflow: hidden;
+  }
+  .cardContent h4 {
+    padding-top: 3px;
+  }
+  .cardStar {
+    padding: 0px 5px 3px 0;
+    text-align: right;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  @media screen and (max-width:360px) {
+      .image, .cardContent {
+          width: 100%;
+      }
+    }    

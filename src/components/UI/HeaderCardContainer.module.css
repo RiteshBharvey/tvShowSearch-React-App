@@ -1,0 +1,9 @@
+.our-story-card {
+    background: transparent;
+    border-bottom: 8px solid #222;
+    color: #fff;
+    /* margin-bottom: 0; */
+    padding: 50px 5%;
+    position: relative;
+    /* margin: 0 auto; */
+  }

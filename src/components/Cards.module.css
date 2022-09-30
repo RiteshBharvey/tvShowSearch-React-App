@@ -1,0 +1,14 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #333;
+    width: fit-content;
+  }
+
+  @media screen and (max-width:360px) {
+    .cards {
+      width: inherit;
+    }
+  }

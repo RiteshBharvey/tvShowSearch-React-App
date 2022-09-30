@@ -1,0 +1,62 @@
+.our-story-header-wrapper {
+    background-color: transparent;
+    bottom: 0;
+    /* height: 5rem; */
+    left: 0;
+    margin: 0 auto;
+    max-width: 1920px;
+    padding-top: 20px;
+    position: relative;
+    right: 0;
+    top: 0;
+    transition: background-color 0.5s;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .our-story-header {
+    height: 100%;
+    margin: 0 3.5rem;
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+  }
+  
+  .nfLogo {
+    fill: #e50914;
+    line-height: normal;
+    margin-right: auto;
+  }
+  
+  .svg-icon-netflix-logo {
+    height: 45px;
+    /* width: auto; */
+    padding-top: 0.5rem;
+    /* width: 167px; */
+  }
+  
+  .authLinks {
+    background-color: #e50914;
+    float: right;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 17px;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 0.5rem;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 553px) {
+    .svg-icon-netflix-logo {
+      height: 35px;
+    }
+    .our-story-header {
+      margin: 0 1.5rem;
+    }
+  }
